@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand to="/home">Virtual-Resturant</Navbar.Brand>
+                    <Link to="/home" className="text-decoration-none"><Navbar.Brand >Virtual-Resturant</Navbar.Brand></Link>
                     <Nav className="ms-auto">
                         <NavLink className="me-3 text-decoration-none text-white" to="/home">Home</NavLink>
                         <NavLink className="me-3 text-decoration-none text-white" to="/resturant">Resturant</NavLink>
