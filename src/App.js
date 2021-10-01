@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Resturant from './components/Resturant/Resturant';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
+import MealDetails from './components/MealDetails/MealDetails';
 
 
 function App() {
@@ -17,8 +18,11 @@ function App() {
           <Route path="/Home">
             <Home></Home>
           </Route>
-          <Route path="/resturant">
+          <Route exact path="/resturant">
             <Resturant></Resturant>
+          </Route>
+          <Route path="/resturant/:itemId">
+            <MealDetails></MealDetails>
           </Route>
           <Route path="/about-us">
             <About></About>
